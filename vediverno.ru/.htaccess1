@@ -1,0 +1,11 @@
+#AuthType Basic
+#AuthName "Restricted Content"
+#AuthUserFile /var/www/u1140759/data/vediverno.ru/.htpasswd
+#Require valid-user
+
+# Редирект с http на https создан автоматически при заказе бесплатного ssl-сертификата
+#RewriteEngine On
+#RewriteCond %{SERVER_PORT} !^443$
+#RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+# Конец редиректа
+    
